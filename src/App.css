@@ -1,0 +1,86 @@
+/* Common styles for all screen sizes */
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  padding: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.conflict-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Styles for mobile devices (up to 767px) */
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+  }
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+}
+
+/* Styles for tablets (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sidebar {
+    width: 300px;
+  }
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+/* Styles for desktop devices (1024px and above) */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    width: 300px;
+  }
+  
+  
+}
+
+/* Full width and full height for the calendar */
+.calendar {
+  flex: 1;
+  margin-left: 20px;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+}
